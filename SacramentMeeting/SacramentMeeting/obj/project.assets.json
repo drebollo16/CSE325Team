@@ -11370,25 +11370,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\byui-student\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\foxtr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\byui-student\\Source\\Repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\SacramentMeeting.csproj",
+      "projectUniqueName": "C:\\Users\\foxtr\\source\\repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\SacramentMeeting.csproj",
       "projectName": "SacramentMeeting",
-      "projectPath": "C:\\Users\\byui-student\\Source\\Repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\SacramentMeeting.csproj",
-      "packagesPath": "C:\\Users\\byui-student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\byui-student\\Source\\Repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\obj\\",
+      "projectPath": "C:\\Users\\foxtr\\source\\repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\SacramentMeeting.csproj",
+      "packagesPath": "C:\\Users\\foxtr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\foxtr\\source\\repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\byui-student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\foxtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -11396,6 +11399,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11452,7 +11456,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

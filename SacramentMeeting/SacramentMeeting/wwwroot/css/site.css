@@ -1,34 +1,113 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: Perpetua;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+        font-family: Perpetua;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+h1,h2,h3{
+    font-family:Perpetua;
+    font-weight:400;
+}
+
+header {
+    background-color: burlywood;
+    font-family: Calibri;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(128, 128, 128);
+}
+
+footer {
+    box-shadow: 1px 1px 2px 2px rgb(128, 128, 128);
+    padding-top:2px;
+    background-color:steelblue;
+    color:white;
+}
+.jumbotron {
+    height: 200px;
+    background-image: url("../images/templeDark.jpg");
+    border-radius: 30px 10px 30px 5px;
+    padding-bottom: 80px;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-left: 280px;
+    padding-right: 280px;
+}
+
+ 
+
+ 
+   
 html {
   position: relative;
   min-height: 100%;
 }
 
+.col-md-6{
+ padding:25px;
+}
+ 
 body {
     margin-bottom: 60px;
-    background-color: lightgoldenrodyellow;
-    color: black;
+    background-color: lightgray;
+    font-size: 18px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-image: url("../images/clouds.jpg");
+    background-size: cover;
 }
-
 .home-image {
     width: 500px;
     height: 500px;
+    box-shadow: 1px 1px 2px 2px rgb(128, 128, 128);
+    border-radius: 0 40px 0 40px;
 }
 
+.privacy-image {
+    width: 500px;
+    height: 500px;
+     border-radius: 0 40px 0 40px;
+}
+.about-image {
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 1px 2px 2px rgb(128, 128, 128);
+    border-radius: 0 40px 0 40px;
+}
 .flex-container {
     display: flex;
     flex-direction: column;
 }
+main {
+    background-color:cadetblue;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Perpetua;
+    padding-top: 20px;
+    box-shadow: 3px 3px 4px 3px rgb(128, 128, 128);
+    border-radius: 5px;
+    padding: 40px;
+    margin: 40px auto;
+    opacity: 0.8;
+    position: relative;
+}
+
+    main::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: lightgray; /* Dark overlay */
+        z-index: -1;
+    }
