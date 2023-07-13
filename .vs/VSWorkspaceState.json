@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\SacramentMeeting",
-    "\\SacramentMeeting\\SacramentMeeting",
-    "\\SacramentMeeting\\SacramentMeeting\\Models",
-    "\\SacramentMeeting\\SacramentMeeting\\Properties",
-    "\\SacramentMeeting\\SacramentMeeting\\Views",
-    "\\SacramentMeeting\\SacramentMeeting\\Views\\Home",
-    "\\SacramentMeeting\\SacramentMeeting\\wwwroot"
+    ""
   ],
-  "SelectedNode": "\\SacramentMeeting\\SacramentMeeting\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\SacramentMeeting.sln",
   "PreviewInSolutionExplorer": false
 }
