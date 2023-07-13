@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\byui-student\\source\\repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\wwwroot\\images\\smeeting.jpg",
+      "PackagePath": "staticwebassets\\images\\smeeting.jpg"
+    },
+    {
       "Id": "C:\\Users\\byui-student\\source\\repos\\CSE325Team\\SacramentMeeting\\SacramentMeeting\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
