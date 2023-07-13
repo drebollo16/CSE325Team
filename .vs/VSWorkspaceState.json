@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SacramentMeeting",
+    "\\SacramentMeeting\\SacramentMeeting",
+    "\\SacramentMeeting\\SacramentMeeting\\Models",
+    "\\SacramentMeeting\\SacramentMeeting\\Properties",
+    "\\SacramentMeeting\\SacramentMeeting\\Views",
+    "\\SacramentMeeting\\SacramentMeeting\\Views\\Home",
+    "\\SacramentMeeting\\SacramentMeeting\\wwwroot"
   ],
-  "SelectedNode": "\\C:\\Users\\foxtr\\Source\\Repos\\CSE325Team",
+  "SelectedNode": "\\SacramentMeeting\\SacramentMeeting\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
