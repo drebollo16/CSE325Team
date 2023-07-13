@@ -15,7 +15,7 @@ namespace SacramentMeeting.Models
         public string OpeningPrayer { get; set; }
         [Display(Name = "Conducting Leader")]
         public string ConductingLeader { get; set; }
-        [Display(Name = "Hymn Number")]
+        [Display(Name = "Opening Song")]
         public string OpeningSong { get; set; }
         [Display(Name = "Sacrament Hymn")]
         public string SacramentHym { get; set; }
@@ -24,7 +24,7 @@ namespace SacramentMeeting.Models
         public int NumOfSpeakers { get; set; }
         [Display(Name = "Speaker Subjects")]
         public string SpeakerSubjects { get; set; }
-        [Display(Name = "Closing Hymn")]
+        [Display(Name = "Closing Song")]
 
         public string ClosingSong { get; set; }
 
