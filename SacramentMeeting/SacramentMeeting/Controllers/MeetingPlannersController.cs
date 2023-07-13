@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using SacramentMeeting.Data;
 using SacramentMeeting.Models;
+//using SacramentMeeting.Views.MeetingPlanners;
 
 namespace SacramentMeeting.Controllers
 {
@@ -20,11 +22,54 @@ namespace SacramentMeeting.Controllers
         }
 
         // GET: MeetingPlanners
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-              return _context.MeetingPlanners != null ? 
-                          View(await _context.MeetingPlanners.ToListAsync()) :
-                          Problem("Entity set 'MeetingContext.MeetingPlanners'  is null.");
+            ViewData["CurrentSort"] = sortOrder;
+
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
+            ViewData["DateSortParam"] = sortOrder == "Date" ? "date_desc" : "Date";
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+
+            var meeting = from m in _context.MeetingPlanners select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                meeting = meeting.Where(s => s.ConductingLeader.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    meeting = meeting.OrderByDescending(m => m.ConductingLeader);
+                    break;
+                case "Date":
+                    meeting = meeting.OrderBy(m => m.MeetingDate); 
+                    break;
+                case "date_desc":
+                    meeting = meeting.OrderByDescending(m => m.MeetingDate);
+                    break;
+                default:
+                    meeting = meeting.OrderBy(m => m.MeetingDate);
+                    break;
+
+
+            }
+
+            int pageSize = 3;
+            return View(await PaginatedList<MeetingPlanner>.CreateAsync(meeting.AsNoTracking(), pageNumber ?? 1, pageSize));
+
+       
         }
 
         // GET: MeetingPlanners/Details/5

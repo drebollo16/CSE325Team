@@ -69,7 +69,7 @@ public class Startup
     {
         services.AddDbContext<MeetingContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        
+
         services.AddDatabaseDeveloperPageExceptionFilter();
 
 
